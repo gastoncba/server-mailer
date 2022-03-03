@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-//const routerApi = require('./router')
+const routerApi = require('./router')
 const bodyParser = require('body-parser')
 
 const PORT = process.env.PORT || 3000;
@@ -24,5 +24,5 @@ app.listen(PORT, () => {
 });
 
 //routers
-router.get('/', (req, res) => {res.send('TEST Email JS')})
-//routerApi(app)
+router.get('/', (req, res) => {res.send('Test Nodemailer')})
+routerApi(app)
